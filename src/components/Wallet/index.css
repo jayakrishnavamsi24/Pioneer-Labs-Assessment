@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home-route {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.home-section {
+    transition: all .5s;
+    /* padding-left: 150px; */
+    background-color: #000000;
+    min-height: 80vh;
+    width: 100%;
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+#check:checked ~ .home-section {
+    /* margin-left: 250px; */
+    padding-left: 0px;
+    padding: 60px 20px;
+}
+
+
+
+.home-header-txt-cont > h1 {
+    color: #ffffff;
+    font-family: "Poppins";
+}
+
+.home-header-txt-cont > p {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+.home-header-txt-cont > p > span {
+    color: #36a535;
+}
+
+.home-user-name {
+  background: linear-gradient(90deg, #67a209, #a4a105);
+  background-clip:content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.start-trading-btn {
+    font-family: "Poppins";
+    color: #ffffff;
+    background-color: #21ab21;
+    height: 40px;
+    width: 110px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+
+@media  screen and (min-width: 768px) {
+    #check:checked ~ .home-section {
+        margin-left: 240px;
+        padding: 30px 60px;
+    }
+    .home-section {
+        padding-left: 100px;
+        min-height: 100vh;
+        padding-right: 50px;
+    }
+    .home-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-header-txt-cont > h1 {
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    
+    .home-header-txt-cont > p {
+        margin-top: 0px;
+    }
+}
+
+.assets-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
